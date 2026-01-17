@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Company Website</title> 
+    <link rel="stylesheet" href="style.css"> 
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
+
+
+
+<style>
+/* ===== BODY ===== */
+body {
+    background-color: #F7EDE2;
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0;
+}
+
+
+
+
+/* ===== DROPDOWN EVENT ===== */
+.dropdown{
+    position:relative;
+}
+
+.dropdown-menu{
+    position:absolute;
+    top:35px;
+    left:0;
+    background:#fff;
+    min-width:220px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.15);
+    border-radius:5px;
+    padding:15px 0;
+    opacity:0;
+    visibility:hidden;
+    transition:0.3s ease;
+    z-index:10;
+}
+
+.dropdown:hover .dropdown-menu{
+    opacity:1;
+    visibility:visible;
+}
+
+.dropdown-menu a{
+    display:block;
+    padding:10px 20px;
+    color:#555;
+    font-size:14px;
+}
+
+.dropdown-menu a:hover{
+    background:#f4efe9;
+    color:#4B2E2B;
+}
+
+.view-all{
+    font-weight:600;
+    color:#4B2E2B;
+}
+
+/* ===== EVENT SECTION ===== */
+.event-section{
+    max-width:900px;
+    margin:40px auto;
+    padding:40px;
+    background:#F7EDE2;
+}
+
+.event-box{
+    background:#fff;
+    padding:30px;
+    margin-bottom:30px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.event-box h2{
+    color:#4B2E2B;
+}
+
+/* ===== BUTTON ===== */
+button{
+    background:#4B2E2B;
+    color:#F7EDE2;
+    padding:10px 20px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#6b4b3e;
+}
+
+/* ===== VIDEO ===== */
+.video-cell video{
+    width:100%;
+    max-width:400px;
+    border:3px solid #4B2E2B;
+    border-radius:10px;
+}
+</style>
+</head>
+
+<body> 
+
+<header class="header"> 
+    <a href="home.html" class="logo">AURORA.CO</a> 
+
+    <nav class="navbar"> 
+        <a href="home.html">Home</a> 
+        <a href="aboutus.html">About</a> 
+        <a href="bawal.html">Bawal</a>
+        <a href="shawl.html">Shawl</a>
+        <a href="instant.html">Instant</a>
+        <a href="feedback.html"target="bottom">Feedback</a>  
+        <a href="event.html"target="bottom">Event</a>
+        <a href="contact us.html">Contact</a>
+        <a href="faq.html">FAQ</a>
+
+        <!-- EVENT DROPDOWN -->
+        <div class="dropdown">
+           
+            <div class="dropdown-menu">
+                <a href="#launch">Launch Event</a>
+                <a href="#video">Event Video</a>
+            </div>
+        </div>
+        
+    </nav> 
+</header>
+
+<section class="event-section">
+
+<h1 style="text-align:center;">Our Event</h1>
+<p style="text-align:center;">Discover our special moments and collaborations.</p>
+
+<!-- LAUNCH -->
+<div class="event-box" id="launch">
+    <h2>✨ Event Launch</h2>
+    <p>We officially launched AURORA.Co with elegance and confidence.</p>
+    <button onclick="alert('AURORA.Co Officially Launched!')">Launch Event</button>
+</div>
+
+<!-- VIDEO -->
+<div class="event-box" id="video">
+    <h2>🎥 Launch Opening</h2>
+    <div class="video-cell">
+        <video controls>
+            <source src="launch.mp4" type="video/mp4">
+        </video>
+    </div>
+</div>
+
+<!-- COLLAB -->
+<div class="event-box" id="collab">
+    <h2>🤍 Collaboration</h2>
+
+    <label>Choose our partner:</label><br><br>
+    <select onchange="showCollab(this.value)">
+        <option value="">-- Select --</option>
+        <option value="Ariani">Ariani</option>
+        <option value="Hijup">Hijup</option>
+    </select>
+
+    <p id="collab-info"></p>
+</div>
+
+</section>
+
+<script>
+function showCollab(value){
+    const info = document.getElementById("collab-info");
+
+
+if(value === "Ariani"){
+        info.innerHTML = "AURORA.Co collaborated with Ariani for an elegant modest fashion showcase.";
+    } else if(value === "Hijup"){
+        info.innerHTML = "AURORA.Co partnered with Hijup to empower local modest brands.";
+    } else {
+        info.innerHTML = "";
+    }
+}
+</script>
+
+</body>
+ <footer style="
+    background-color:#F3EDE4;
+    color:#6b4f3f;
+    text-align:center;
+    padding:18px 10px;
+    font-family:Arial, sans-serif;
+    font-size:14px;
+    border-top:1px solid rgba(107,79,63,0.3);
+    margin-top:60px;
+">
+    © January 2026 <strong style="letter-spacing:1px;">AURORA.CO</strong>. All Rights Reserved.
+</footer>
+</html>

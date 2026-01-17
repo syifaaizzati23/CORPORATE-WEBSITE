@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Feedback | AURORA.CO</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+    <style>
+        
+        /* ===== FEEDBACK SECTION ===== */
+        .feedback-section {
+            padding: 60px 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .feedback-wrapper {
+            display: flex;
+            max-width: 900px;
+            width: 100%;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .feedback-form {
+            flex: 1;
+            padding: 40px;
+        }
+
+        .feedback-form h1 {
+            margin-top: 0;
+            margin-bottom: 25px;
+            color: #7a5c48;
+            letter-spacing: 1px;
+        }
+
+        .feedback-form label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .feedback-form input,
+        .feedback-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+        }
+
+        .feedback-form textarea {
+            resize: none;
+            height: 120px;
+        }
+
+        .feedback-form button {
+            background-color: #7a4a2e;
+            color: #f5e6d3;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .feedback-form button:hover {
+            background-color: #5f3a24;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <a href="home.html" class="logo">AURORA.CO</a>
+        <nav class="navbar">
+            <a href="home.html">Home</a>
+            <a href="aboutus.html">About</a>
+            <a href="bawal.html">Bawal</a>
+            <a href="shawl.html">Shawl</a>
+            <a href="instant.html">Instant</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="event.html">Event</a>
+            <a href="contact us.html">Contact</a>
+            <a href="faq.html">FAQ</a>
+        </nav>
+    </header>
+
+    <!-- FEEDBACK -->
+<section class="feedback-section">
+    <div class="feedback-wrapper">
+
+        <div class="feedback-form">
+            <h1>CUSTOMER FEEDBACK</h1>
+
+            <form id="feedbackForm">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Submit</button>
+                <p id="successMsg" style="display:none; margin-top:10px; color:#7a5c48;">
+                    Thank you! Your feedback has been submitted.
+                </p>
+            </form>
+        </div>
+
+    </div>
+</section>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+     <footer style="
+    background-color:#F3EDE4;
+    color:#6b4f3f;
+    text-align:center;
+    padding:18px 10px;
+    font-family:Arial, sans-serif;
+    font-size:14px;
+    border-top:1px solid rgba(107,79,63,0.3);
+    margin-top:60px;
+">
+    © January 2026 <strong style="letter-spacing:1px;">AURORA.CO</strong>. All Rights Reserved.
+</footer>
+
+</body>
+
+</html>

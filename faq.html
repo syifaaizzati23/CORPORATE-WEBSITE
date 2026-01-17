@@ -1,0 +1,132 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+
+<head> 
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Company Website</title> 
+    <link rel="stylesheet" href="style.css"> 
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
+
+    <style>
+    body {
+        background-color: #F7EDE2; /* Change this to your desired background color */
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    main {
+        max-width: 800px;
+        margin: 40px auto; /* Adjust margin to create space */
+        padding: 100px;
+        background-color: #F7EDE2 ;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    
+    h1 {
+        text-align: center;
+        color: black;
+    }
+    
+    section {
+        margin-bottom: 20px;
+    }
+    
+    section img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+    
+    .mission, .vision {
+        color: black;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .history-timeline {
+        text-align: center;
+    }
+    
+    .history-timeline h3 {
+        color: black;
+    }
+    
+    .history-timeline p {
+        color: black;
+        margin: 10px 0;
+    }
+
+    </style>
+</head> 
+
+<body> 
+
+    <header class="header"> 
+        <a href="home.html" class="logo">AURORA.CO</a> 
+        <nav class="navbar" role="navigation"> 
+            <a href="home.html" target="bottom">Home</a> 
+            <a href="aboutus.html" target="bottom">About</a> 
+            <a href="bawal.html" target="bottom">Bawal</a>
+            <a href="shawl.html" target="bottom">Shawl</a>
+            <a href="instant.html" target="bottom">Instant</a>
+            <a href="feedback.html">Feedback</a> 
+             <a href="event.html"target="bottom">Event</a>
+            <a href="contact us.html"target="bottom">Contact</a>
+            <a href="faq.html"target="bottom">FAQ</a>
+            
+        </nav> 
+    </header> 
+<section id="faq">
+  <h2>Frequently Asked Questions (FAQ)</h2>
+
+  <button class="faq-question">What material are AURORA.Co hijabs made of?</button>
+  <div class="faq-answer">
+    <p>Our hijabs are made from premium chiffon, satin, and cotton materials.</p>
+  </div>
+
+  <button class="faq-question">Do you offer delivery?</button>
+  <div class="faq-answer">
+    <p>Yes, we provide delivery within Malaysia with affordable shipping rates.</p>
+  </div>
+
+  <button class="faq-question">Can I return or exchange my hijab?</button>
+  <div class="faq-answer">
+    <p>Yes, exchanges are allowed within 7 days if the product is unused.</p>
+  </div>
+</section>
+
+<style>
+.faq-question {
+  width: 100%;
+  padding: 10px;
+  background-color: #f2cbd1;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.faq-answer {
+  display: none;
+  padding: 10px;
+  background-color: #fff0f3;
+}
+</style>
+
+<script>
+const questions = document.querySelectorAll(".faq-question");
+
+questions.forEach(question => {
+  question.addEventListener("click", () => {
+    const answer = question.nextElementSibling;
+    answer.style.display = answer.style.display === "block" ? "none" : "block";
+  });
+});
+</script>
+</body>
+ 
+</html>

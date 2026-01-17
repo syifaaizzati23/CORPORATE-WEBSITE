@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"> 
+    <title>Company Website</title> 
+    <link rel="stylesheet" href="style.css"> 
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
+</head> 
+    <style>
+        body {
+            background-color: #F3EDE4;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+    
+
+       
+        /* DROPDOWN */
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            top: 30px;
+            left: 0;
+            background-color: #ffffff;
+            min-width: 180px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            z-index: 100;
+        }
+
+        .dropdown-content a {
+            display: block;
+            padding: 12px 15px;
+            color: black;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #F3EDE4;
+        }
+
+        /* SHOW DROPDOWN ON HOVER */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* MAIN */
+        main {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 60px;
+            background-color: #F3EDE4;
+        }
+
+        h1 {
+            text-align: center;
+            color: black;
+        }
+
+        section img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+<header class="header">
+    <a href="home.html" class="logo">AURORA.CO</a>
+
+    <nav class="navbar">
+        <a href="home.html">Home</a>
+
+        <!-- ABOUT DROPDOWN -->
+        <div class="dropdown">
+            <a href="#">About</a>
+            <div class="dropdown-content">
+                <a href="mission.html">Mission & Vision</a>
+                <a href="history.html">Company History</a>
+            </div>
+        </div>
+
+        <a href="bawal.html">Bawal</a>
+        <a href="shawl.html">Shawl</a>
+        <a href="instant.html">Instant</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="event.html">Event</a>
+        <a href="contact us.html">Contact</a>
+        <a href="faq.html">FAQ</a>
+    </nav>
+</header>
+
+<main>
+    <section id="organizational-chart">
+        <h1>Organizational Chart</h1>
+        <img src="pica.png" alt="Organizational Chart">
+    </section>
+</main>
+
+</body>
+<footer style="
+    background-color:#F3EDE4;
+    color:#6b4f3f;
+    text-align:center;
+    padding:18px 10px;
+    font-family:Arial, sans-serif;
+    font-size:14px;
+    border-top:1px solid rgba(107,79,63,0.3);
+    margin-top:60px;
+">
+    © January 2026 <strong style="letter-spacing:1px;">AURORA.CO</strong>. All Rights Reserved.
+</footer>
+
+</html>

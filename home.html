@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        
+
+        
+
+        .home-img {
+            flex: 1;
+            min-width: 80px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .home-img img {
+            max-width: 60%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        @media screen and (max-width: 768px) {
+            .home {
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+
+            .home-img {
+                margin-bottom: 20px;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="home.html" class="logo">AURORA.CO</a>
+        <nav class="navbar">
+            <a href="home.html" target="bottom">Home</a>
+            <a href="aboutus.html" target="bottom">About</a>
+            <a href="bawal.html" target="bottom">Bawal</a>
+            <a href="shawl.html" target="bottom">Shawl</a>
+            <a href="instant.html" target="bottom">Instant</a>
+            <a href="feedback.html" target="bottom">Feedback</a>
+            <a href="event.html" target="bottom">Event</a>
+            <a href="contact us.html" target="bottom">Contact</a>
+            <a href="faq.html" target="bottom">FAQ</a>
+        </nav>
+    </header>
+
+    <section id="home" class="home">
+        <div class="home-content">
+            <h1>Welcome to,</h1>
+            <h3>AURORA.CO</h3>
+            <p>Selling fashionable and modest hijab for all the girls!!</p>
+            <div class="btn-box">
+                <a href="contact us.html" target="bottom">Contact</a>
+            </div>
+        </div>
+
+        <div class="home-img">
+            <img src="logo.png" alt="Aurora Highlight Image">
+        </div>
+    </section>
+
+</body>
+
+    <footer style="
+    background-color:#F3EDE4;
+    color:#6b4f3f;
+    text-align:center;
+    padding:18px 10px;
+    font-family:Arial, sans-serif;
+    font-size:14px;
+    border-top:1px solid rgba(107,79,63,0.3);
+    margin-top:60px;
+">
+    © January 2026 <strong style="letter-spacing:1px;">AURORA.CO</strong>. All Rights Reserved.
+</footer>
+
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+
+<head> 
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Company Website</title> 
+    <link rel="stylesheet" href="style.css"> 
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
+
+    <style>
+    body {
+        background-color: #F7EDE2; /* Change this to your desired background color */
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    main {
+        max-width: 800px;
+        margin: 40px auto; /* Adjust margin to create space */
+        padding: 100px;
+        background-color: #F7EDE2 ;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    
+    h1 {
+        text-align: center;
+        color: black;
+    }
+    
+    section {
+        margin-bottom: 20px;
+    }
+    
+    section img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+    
+    .mission, .vision {
+        color: black;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .history-timeline {
+        text-align: center;
+    }
+    
+    .history-timeline h3 {
+        color: black;
+    }
+    
+    .history-timeline p {
+        color: black;
+        margin: 10px 0;
+    }
+
+    </style>
+</head> 
+
+<body> 
+
+    <header class="header"> 
+        <a href="home.html" class="logo">AURORA.CO</a> 
+        <nav class="navbar" role="navigation"> 
+            <a href="home.html" target="bottom">Home</a> 
+            <a href="aboutus.html" target="bottom">About</a> 
+            <a href="bawal.html" target="bottom">Bawal</a>
+            <a href="shawl.html" target="bottom">Shawl</a>
+            <a href="instant.html" target="bottom">Instant</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="event.html"target="bottom">Event</a>
+            <a href="contact us.html"target="bottom">Contact</a>
+            <a href="faq.html"target="bottom">FAQ</a>
+            
+        </nav> 
+    </header> 
+    
+
+   <style>
+    body {
+        background-color: #F3EDE4;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Container Utama untuk Contact Section */
+    #contact {
+        max-width: 600px;
+        width: 90%;
+        margin: 50px auto;
+        padding: 40px;
+        background-color: #f2cbd1;
+        border-radius: 15px; /* Frame melengkung */
+        box-shadow: 0 10px 30px rgba(0,0,0,0.08); /* Bayangan lembut */
+        text-align: center;
+    }
+
+    #contact h2 {
+        color: #333;
+        font-size: 2rem;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    #contact p {
+        color: #666;
+        margin-bottom: 30px;
+    }
+
+    /* Style untuk Form */
+    form {
+        text-align: left;
+    }
+
+    label {
+        font-weight: bold;
+        color: #444;
+        display: block;
+        margin-bottom: 8px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px; /* Frame input melengkung */
+        box-sizing: border-box; /* Supaya padding tak lari */
+        font-size: 16px;
+        transition: all 0.3s ease;
+        background-color: #fafafa;
+    }
+
+    /* Efek bila user klik pada kotak input */
+    input:focus, textarea:focus {
+        border-color: #d4a373; /* Warna tema (boleh tukar ikut logo) */
+        outline: none;
+        box-shadow: 0 0 8px rgba(212, 163, 115, 0.2);
+        background-color: #fff;
+    }
+
+    /* Style Butang */
+    button[type="submit"] {
+        width: 100%;
+        padding: 15px;
+        background-color: #333;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+        transition: background 0.3s ease;
+    }
+
+    button[type="submit"]:hover {
+        background-color: #555;
+        transform: translateY(-2px); /* Butang naik sikit bila hover */
+    }
+
+    /* Info Hubungi di bawah */
+    .contact-info {
+        margin-top: 30px;
+        padding-top: 20px;
+        border-top: 1px solid #eee;
+        line-height: 1.8;
+        color: #555;
+    }
+
+    .contact-info i {
+        margin-right: 10px;
+        color: #d4a373;
+    }
+</style>
+
+<section id="contact">
+  <h2>Contact Aurora.Co</h2>
+  <p>Have questions about our collection or your order? We'd love to hear from you!.</p>
+
+  <form action="#" method="post">
+    <label><i class='bx bxs-user'></i>Full Name </label>
+    <input type="text" name="name" placeholder="Enter your full name" required>
+
+    <label><i class='bx bxs-envelope'></i>Email</label>
+    <input type="email" name="email" placeholder="example@gmail.com" required>
+
+    <label><i class='bx bxs-message-dots'></i>Your Message</label>
+    <textarea name="message" rows="5" placeholder="How can we help you?" required></textarea>
+
+    <button type="submit">SEND MESSAGE</button>
+  </form>
+
+  <div class="contact-info">
+    <p>📍 AURORA.Co, Malaysia</p>
+    <p>📧 aurora.co@gmail.com</p>
+    <p>📞 +60 11-70747030</p>
+  </div>
+</section>
+</body>
+<footer style="
+    background-color:#F3EDE4;
+    color:#6b4f3f;
+    text-align:center;
+    padding:18px 10px;
+    font-family:Arial, sans-serif;
+    font-size:14px;
+    border-top:1px solid rgba(107,79,63,0.3);
+    margin-top:60px;
+">
+    © January 2026 <strong style="letter-spacing:1px;">AURORA.CO</strong>. All Rights Reserved.
+</footer>
+</html>
